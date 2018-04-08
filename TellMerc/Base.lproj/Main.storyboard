@@ -214,15 +214,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkN-Dq-gf2">
-                                <rect key="frame" x="30" y="141" width="315" height="300"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkN-Dq-gf2">
+                                <rect key="frame" x="30" y="161" width="315" height="0.0"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QC9-14-JO1">
-                                <rect key="frame" x="140" y="500" width="94" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QC9-14-JO1">
+                                <rect key="frame" x="140" y="226" width="94" height="51"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
                                 <inset key="contentEdgeInsets" minX="25" minY="10" maxX="25" maxY="10"/>
                                 <state key="normal" title="OK">
@@ -233,10 +232,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gh6-c2-gmL" firstAttribute="top" secondItem="LHw-eE-fxA" secondAttribute="top" constant="50" id="8J4-gj-0z9"/>
-                            <constraint firstItem="NkN-Dq-gf2" firstAttribute="leading" secondItem="LHw-eE-fxA" secondAttribute="leading" constant="45" id="MaD-B2-zoy"/>
-                            <constraint firstItem="LHw-eE-fxA" firstAttribute="trailing" secondItem="NkN-Dq-gf2" secondAttribute="trailing" constant="45" id="V9D-Vr-xzM"/>
+                            <constraint firstItem="QC9-14-JO1" firstAttribute="centerX" secondItem="LHw-eE-fxA" secondAttribute="centerX" id="CIJ-yl-CpE"/>
+                            <constraint firstItem="NkN-Dq-gf2" firstAttribute="leading" secondItem="LHw-eE-fxA" secondAttribute="leading" constant="30" id="MaD-B2-zoy"/>
+                            <constraint firstItem="LHw-eE-fxA" firstAttribute="trailing" secondItem="NkN-Dq-gf2" secondAttribute="trailing" constant="30" id="V9D-Vr-xzM"/>
                             <constraint firstItem="gh6-c2-gmL" firstAttribute="centerX" secondItem="LHw-eE-fxA" secondAttribute="centerX" id="dSf-H3-0Ue"/>
-                            <constraint firstItem="NkN-Dq-gf2" firstAttribute="top" secondItem="gh6-c2-gmL" secondAttribute="bottom" constant="50" id="vvL-zn-G1V"/>
+                            <constraint firstItem="QC9-14-JO1" firstAttribute="top" secondItem="NkN-Dq-gf2" secondAttribute="bottom" constant="65" id="ohc-7u-Rr8"/>
+                            <constraint firstItem="NkN-Dq-gf2" firstAttribute="top" secondItem="gh6-c2-gmL" secondAttribute="bottom" constant="40" id="s4S-VO-EWz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LHw-eE-fxA"/>
                     </view>
