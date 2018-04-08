@@ -209,7 +209,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gh6-c2-gmL">
-                                <rect key="frame" x="39" y="50" width="296" height="51"/>
+                                <rect key="frame" x="39" y="70" width="296" height="51"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -221,9 +221,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QC9-14-JO1">
-                                <rect key="frame" x="164" y="510" width="46" height="30"/>
+                                <rect key="frame" x="140" y="500" width="94" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="25" minY="10" maxX="25" maxY="10"/>
                                 <state key="normal" title="OK">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -231,7 +232,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gh6-c2-gmL" firstAttribute="top" secondItem="LHw-eE-fxA" secondAttribute="top" constant="30" id="8J4-gj-0z9"/>
+                            <constraint firstItem="gh6-c2-gmL" firstAttribute="top" secondItem="LHw-eE-fxA" secondAttribute="top" constant="50" id="8J4-gj-0z9"/>
                             <constraint firstItem="NkN-Dq-gf2" firstAttribute="leading" secondItem="LHw-eE-fxA" secondAttribute="leading" constant="45" id="MaD-B2-zoy"/>
                             <constraint firstItem="LHw-eE-fxA" firstAttribute="trailing" secondItem="NkN-Dq-gf2" secondAttribute="trailing" constant="45" id="V9D-Vr-xzM"/>
                             <constraint firstItem="gh6-c2-gmL" firstAttribute="centerX" secondItem="LHw-eE-fxA" secondAttribute="centerX" id="dSf-H3-0Ue"/>
@@ -241,6 +242,7 @@
                     </view>
                     <connections>
                         <outlet property="confirmMessage" destination="NkN-Dq-gf2" id="9Yk-zk-mfu"/>
+                        <outlet property="okButton" destination="QC9-14-JO1" id="ZuA-oY-ddq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihR-z4-Ngf" userLabel="First Responder" sceneMemberID="firstResponder"/>
