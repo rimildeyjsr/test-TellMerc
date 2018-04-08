@@ -10,14 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - view did load
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        styleButtons()
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: - outlets
+    
+    @IBOutlet var myButtons: [UIButton]!
+    
+    func styleButtons() {
+        for button in self.myButtons {
+            button.backgroundColor = .clear
+            button.layer.cornerRadius = 25
+            button.layer.borderWidth = 2
+            button.layer.borderColor = UIColor.black.cgColor
+        }
     }
 
 

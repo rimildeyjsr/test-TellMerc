@@ -1,24 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Copperplate.ttc">
+            <string>Copperplate</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TellMerc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TellMerc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1AJ-nC-IeL">
+                                <rect key="frame" x="30" y="60" width="246" height="64"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Spm-76-SEi">
+                                <rect key="frame" x="291" y="60" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="MBD-qJ-7A2"/>
+                                    <constraint firstAttribute="width" secondItem="Spm-76-SEi" secondAttribute="height" multiplier="1:1" id="UhF-G2-MJZ"/>
+                                    <constraint firstAttribute="width" constant="64" id="aM1-kP-hyY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewards Catalogue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaf-Fo-QNm">
+                                <rect key="frame" x="27" y="214" width="321" height="32.5"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="2nz-6C-keg">
+                                <rect key="frame" x="80.5" y="356.5" width="214" height="207"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngp-q5-eid">
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="49"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="28"/>
+                                        <inset key="contentEdgeInsets" minX="35" minY="10" maxX="35" maxY="10"/>
+                                        <state key="normal" title="SERVICES">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fH-FG-Kpo">
+                                        <rect key="frame" x="0.0" y="79" width="214" height="49"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="28"/>
+                                        <inset key="contentEdgeInsets" minX="35" minY="10" maxX="35" maxY="10"/>
+                                        <state key="normal" title="GOODIES">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSR-aR-vv0">
+                                        <rect key="frame" x="0.0" y="158" width="214" height="49"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="28"/>
+                                        <inset key="contentEdgeInsets" minX="35" minY="10" maxX="35" maxY="10"/>
+                                        <state key="normal" title="EVENTS">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2nz-6C-keg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2yF-VW-NG4"/>
+                            <constraint firstItem="1AJ-nC-IeL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="4af-1l-V5l"/>
+                            <constraint firstItem="iaf-Fo-QNm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Bb9-OH-kzW"/>
+                            <constraint firstItem="Spm-76-SEi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Rz5-Sh-PRk"/>
+                            <constraint firstItem="iaf-Fo-QNm" firstAttribute="top" secondItem="Spm-76-SEi" secondAttribute="bottom" constant="90" id="a3H-3g-GUq"/>
+                            <constraint firstItem="Spm-76-SEi" firstAttribute="leading" secondItem="1AJ-nC-IeL" secondAttribute="trailing" constant="15" id="bLO-Z7-abP"/>
+                            <constraint firstItem="2nz-6C-keg" firstAttribute="top" secondItem="iaf-Fo-QNm" secondAttribute="bottom" constant="110" id="feG-Yi-sy7"/>
+                            <constraint firstItem="iaf-Fo-QNm" firstAttribute="top" secondItem="1AJ-nC-IeL" secondAttribute="bottom" constant="90" id="yde-2Q-3wH"/>
+                            <constraint firstItem="1AJ-nC-IeL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="zk8-mT-lLF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Spm-76-SEi" secondAttribute="trailing" constant="20" id="zoi-Rv-MVY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outletCollection property="myButtons" destination="ngp-q5-eid" collectionClass="NSMutableArray" id="bXb-Fr-6pD"/>
+                        <outletCollection property="myButtons" destination="1fH-FG-Kpo" collectionClass="NSMutableArray" id="fLa-Ev-m1H"/>
+                        <outletCollection property="myButtons" destination="iSR-aR-vv0" collectionClass="NSMutableArray" id="OXI-ou-uxv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="434" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="259" height="194"/>
+    </resources>
 </document>
