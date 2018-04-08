@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  EventsViewController.swift
 //  TellMerc
 //
 //  Created by Rimil Dey on 08/04/18.
@@ -8,28 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class EventsViewController: UIViewController {
 
     // MARK: - view did load
     override func viewDidLoad() {
         super.viewDidLoad()
         setupButtons()
-        
     }
     
     // MARK: - outlets
     
-    @IBOutlet var myButtons: [UIButton]!
+    @IBOutlet var eventButtons: [UIButton]!
     
     func setupButtons() {
-        for button in self.myButtons {
+        for button in self.eventButtons {
             button.backgroundColor = .clear
             button.layer.cornerRadius = 25
             button.layer.borderWidth = 2
             button.layer.borderColor = UIColor.black.cgColor
         }
     }
-
-
 }
-
