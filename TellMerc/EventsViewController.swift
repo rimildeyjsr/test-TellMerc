@@ -13,19 +13,11 @@ class EventsViewController: UIViewController {
     // MARK: - view did load
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupButtons()
+        buttonSetup.setupButtonCollection(buttonArray: eventButtons)
     }
     
     // MARK: - outlets
     
     @IBOutlet var eventButtons: [UIButton]!
     
-    func setupButtons() {
-        for button in self.eventButtons {
-            button.backgroundColor = .clear
-            button.layer.cornerRadius = 25
-            button.layer.borderWidth = 2
-            button.layer.borderColor = UIColor.black.cgColor
-        }
-    }
 }

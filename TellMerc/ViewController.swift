@@ -13,23 +13,12 @@ class ViewController: UIViewController {
     // MARK: - view did load
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupButtons()
-        
+        buttonSetup.setupButtonCollection(buttonArray: myButtons)
     }
     
     // MARK: - outlets
     
     @IBOutlet var myButtons: [UIButton]!
-    
-    func setupButtons() {
-        for button in self.myButtons {
-            button.backgroundColor = .clear
-            button.layer.cornerRadius = 25
-            button.layer.borderWidth = 2
-            button.layer.borderColor = UIColor.black.cgColor
-        }
-    }
-
-
+   
 }
 

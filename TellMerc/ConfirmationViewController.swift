@@ -19,14 +19,8 @@ class ConfirmationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         confirmMessage.text! = "You have successfully enrolled for the Test Drive event in Chennai. You will get the details shortly."
-        setupButton()
+        buttonSetup.setupButton(button: okButton)
     }
-    
-    func setupButton () {
-        okButton.backgroundColor = .clear
-        okButton.layer.cornerRadius = 25
-        okButton.layer.borderWidth = 2
-        okButton.layer.borderColor = UIColor.black.cgColor
-    }
+   
     
 }
